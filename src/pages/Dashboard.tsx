@@ -1,7 +1,7 @@
 
 import { LearningCard } from "@/components/LearningCard";
 import { ProgressSection } from "@/components/ProgressSection";
-import { Brain, Lightbulb, Network, Code } from "lucide-react";
+import { Brain } from "lucide-react";
 import { SplashCursor } from "@/components/ui/splash-cursor";
 
 const learningPaths = [
@@ -27,7 +27,7 @@ const learningPaths = [
   },
 ];
 
-const Index = () => {
+const Dashboard = () => {
   return (
     <div className="min-h-screen bg-background animate-fade-in relative">
       <SplashCursor />
@@ -65,4 +65,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Dashboard;
