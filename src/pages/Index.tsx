@@ -2,6 +2,7 @@
 import { LearningCard } from "@/components/LearningCard";
 import { ProgressSection } from "@/components/ProgressSection";
 import { Brain, Lightbulb, Network, Code } from "lucide-react";
+import { SplashCursor } from "@/components/ui/splash-cursor";
 
 const learningPaths = [
   {
@@ -28,8 +29,9 @@ const learningPaths = [
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background animate-fade-in">
-      <div className="container py-8 px-4 mx-auto max-w-6xl">
+    <div className="min-h-screen bg-background animate-fade-in relative">
+      <SplashCursor />
+      <div className="container py-8 px-4 mx-auto max-w-6xl relative z-10">
         <div className="text-center mb-12 space-y-4">
           <div className="inline-block p-2 bg-primary/10 rounded-full mb-4 animate-float">
             <Brain className="w-8 h-8 text-theme-purple" />
