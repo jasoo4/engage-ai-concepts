@@ -1,7 +1,6 @@
 
 import { LearningCard } from "@/components/LearningCard";
 import { ProgressSection } from "@/components/ProgressSection";
-import { Brain } from "lucide-react";
 import { SplashCursor } from "@/components/ui/splash-cursor";
 
 const learningPaths = [
@@ -32,15 +31,6 @@ const Dashboard = () => {
     <div className="min-h-screen bg-background animate-fade-in relative">
       <SplashCursor />
       <div className="container py-8 px-4 mx-auto max-w-6xl relative z-10">
-        <div className="text-center mb-12 space-y-4">
-          <div className="inline-block p-2 bg-primary/10 rounded-full mb-4 animate-float">
-            <Brain className="w-8 h-8 text-theme-purple" />
-          </div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Explore the fascinating world of artificial intelligence through interactive lessons and engaging content.
-          </p>
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div className="md:col-span-2">
             <h2 className="text-2xl font-semibold mb-6">Learning Paths</h2>
