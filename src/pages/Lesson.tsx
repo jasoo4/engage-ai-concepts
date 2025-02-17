@@ -16,36 +16,46 @@ const lessonData = {
   content: [
     {
       type: "text" as const,
-      content: "Artificial Intelligence (AI) is like teaching computers to think and learn, similar to how humans do. Imagine teaching a computer to recognize pictures of cats - that's AI in action!"
+      content: "AI is like teaching computers to think and make decisions, just like humans—but much faster!\n\nImagine having a super-smart helper that can process huge amounts of information in seconds and learn from patterns to make useful decisions. That's what AI does!"
+    },
+    {
+      type: "text" as const,
+      content: "Here are some real-world examples of AI in action:\n\n• Spotify & Netflix: AI suggests music and movies based on what you like\n• Google Translate: AI understands languages and translates them in real-time\n• TikTok: AI recommends videos based on your interests\n• Self-driving cars: AI processes sensor data to navigate safely"
     },
     {
       type: "image" as const,
       content: "/placeholder.svg",
-      caption: "AI learning process visualization"
-    },
-    {
-      type: "text" as const,
-      content: "AI systems can:\n• Learn from examples\n• Find patterns in data\n• Make decisions\n• Solve problems"
+      caption: "AI powers many everyday technologies we use"
     }
   ],
   quiz: [
     {
-      question: "What is AI primarily designed to do?",
+      question: "Which of these is an example of AI?",
       options: [
-        "Replace all human jobs",
-        "Help computers think and learn",
-        "Make video games more fun",
-        "Store lots of data"
+        "A calculator",
+        "Siri or Alexa",
+        "A light bulb",
+        "A regular thermostat"
       ],
       correctAnswer: 1
     },
     {
-      question: "Which of these is an example of AI in action?",
+      question: "What makes AI different from regular computer programs?",
       options: [
-        "A calculator adding numbers",
-        "Saving a file on a computer",
-        "A computer recognizing faces in photos",
-        "Sending an email"
+        "It runs faster",
+        "It uses more electricity",
+        "It can learn and adapt from experience",
+        "It's more expensive"
+      ],
+      correctAnswer: 2
+    },
+    {
+      question: "Which of these tasks is AI commonly used for?",
+      options: [
+        "Basic math calculations",
+        "Turning lights on and off",
+        "Recommending movies based on your preferences",
+        "Storing files on a computer"
       ],
       correctAnswer: 2
     }
