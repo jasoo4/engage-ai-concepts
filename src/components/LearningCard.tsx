@@ -35,6 +35,8 @@ export function LearningCard({
           </div>
         )}
         <Button 
+          variant="default"
+          size="default"
           className="w-full bg-gradient-to-r from-theme-purple to-theme-teal text-white hover:opacity-90"
         >
           Continue Learning
