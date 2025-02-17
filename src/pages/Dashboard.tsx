@@ -1,7 +1,6 @@
 
 import { LearningCard } from "@/components/LearningCard";
 import { ProgressSection } from "@/components/ProgressSection";
-import { SplashCursor } from "@/components/ui/splash-cursor";
 
 const learningPaths = [
   {
@@ -29,7 +28,6 @@ const learningPaths = [
 const Dashboard = () => {
   return (
     <div className="min-h-screen bg-background animate-fade-in relative">
-      <SplashCursor />
       <div className="container py-8 px-4 mx-auto max-w-6xl relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div className="md:col-span-2">
