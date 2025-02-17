@@ -1,68 +1,35 @@
 
-import { LearningCard } from "@/components/LearningCard";
-import { ProgressSection } from "@/components/ProgressSection";
-import { Brain, Lightbulb, Network, Code } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { SplashCursor } from "@/components/ui/splash-cursor";
+import { Brain } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
-const learningPaths = [
-  {
-    title: "Introduction to AI",
-    description: "Learn the basics of artificial intelligence and its impact on our world.",
-    progress: 65,
-  },
-  {
-    title: "Machine Learning Fundamentals",
-    description: "Discover how machines learn from data and make predictions.",
-    progress: 30,
-  },
-  {
-    title: "Neural Networks",
-    description: "Explore how artificial neural networks mimic the human brain.",
-    progress: 0,
-  },
-  {
-    title: "AI Ethics",
-    description: "Understand the ethical considerations in AI development.",
-    progress: 0,
-  },
-];
+export default function Index() {
+  const navigate = useNavigate();
 
-const Index = () => {
   return (
-    <div className="min-h-screen bg-background animate-fade-in relative">
+    <div className="h-screen w-full overflow-hidden bg-background relative flex items-center justify-center">
       <SplashCursor />
-      <div className="container py-8 px-4 mx-auto max-w-6xl relative z-10">
-        <div className="text-center mb-12 space-y-4">
-          <div className="inline-block p-2 bg-primary/10 rounded-full mb-4 animate-float">
-            <Brain className="w-8 h-8 text-theme-purple" />
-          </div>
-          <h1 className="text-4xl font-bold gradient-text">
-            Learn AI Concepts
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Explore the fascinating world of artificial intelligence through interactive lessons and engaging content.
-          </p>
+      <div className="relative z-10 text-center space-y-8 px-4">
+        <div className="inline-block p-4 bg-primary/10 rounded-full mb-4 animate-float">
+          <Brain className="w-12 h-12 text-theme-purple" />
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <div className="md:col-span-2">
-            <h2 className="text-2xl font-semibold mb-6">Learning Paths</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {learningPaths.map((path, index) => (
-                <div key={path.title} className="animate-slide-up" style={{ animationDelay: `${index * 100}ms` }}>
-                  <LearningCard {...path} />
-                </div>
-              ))}
-            </div>
-          </div>
-          <div>
-            <h2 className="text-2xl font-semibold mb-6">Your Journey</h2>
-            <ProgressSection />
-          </div>
+        <h1 className="text-6xl font-bold gradient-text animate-fade-in">
+          Learn AI Concepts
+        </h1>
+        <p className="text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "200ms" }}>
+          Begin your journey into the fascinating world of artificial intelligence
+        </p>
+        <div className="animate-fade-in" style={{ animationDelay: "400ms" }}>
+          <Button
+            size="lg"
+            className="bg-gradient-to-r from-theme-purple to-theme-teal text-white hover:opacity-90 text-lg px-8"
+            onClick={() => navigate("/dashboard")}
+          >
+            Start Learning
+          </Button>
         </div>
       </div>
     </div>
   );
-};
-
-export default Index;
+}
