@@ -15,16 +15,16 @@ const lessonData = {
   description: "Learn about the basics of AI and how it's changing our world",
   content: [
     {
-      type: "text",
+      type: "text" as const,
       content: "Artificial Intelligence (AI) is like teaching computers to think and learn, similar to how humans do. Imagine teaching a computer to recognize pictures of cats - that's AI in action!"
     },
     {
-      type: "image",
+      type: "image" as const,
       content: "/placeholder.svg",
       caption: "AI learning process visualization"
     },
     {
-      type: "text",
+      type: "text" as const,
       content: "AI systems can:\n• Learn from examples\n• Find patterns in data\n• Make decisions\n• Solve problems"
     }
   ],
