@@ -36,9 +36,6 @@ const Dashboard = () => {
           <div className="inline-block p-2 bg-primary/10 rounded-full mb-4 animate-float">
             <Brain className="w-8 h-8 text-theme-purple" />
           </div>
-          <h1 className="text-4xl font-bold gradient-text">
-            Learn AI Concepts
-          </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Explore the fascinating world of artificial intelligence through interactive lessons and engaging content.
           </p>
