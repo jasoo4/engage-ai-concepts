@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -175,94 +176,94 @@ const lessonsData = [
     content: [
       {
         type: "text" as const,
-        content: "Machine Learning is a type of AI that helps computers learn from experience without being explicitly programmed!\n\nThink of it like teaching a child:\n• First, you show them examples (Training Data)\n• They learn patterns from these examples (Learning)\n• Finally, they can recognize similar things on their own (Prediction)"
+        content: "Machine Learning is the science of teaching computers to learn from data. Let's break down the core concepts:\n\n📊 Data and Features:\n• Data is the information we feed to ML models\n• Features are specific properties we want the model to learn from\n• Example: For a house price predictor, features might be size, location, age\n\n🎯 Training Process:\n• The model learns by looking at many examples\n• It adjusts its internal rules based on the data\n• The more quality data, the better it learns"
       },
       {
         type: "text" as const,
-        content: "There are three main types of Machine Learning:\n\n1️⃣ Supervised Learning:\n• Like learning with a teacher\n• Computer learns from labeled examples\n• Example: Spam email detection\n\n2️⃣ Unsupervised Learning:\n• Learning without labels\n• Finding patterns in data\n• Example: Customer grouping\n\n3️⃣ Reinforcement Learning:\n• Learning through trial and error\n• Getting rewards for correct actions\n• Example: Game playing AI"
+        content: "🔄 The ML Pipeline:\n\n1. Data Collection\n• Gathering relevant information\n• Ensuring data quality\n\n2. Data Preprocessing\n• Cleaning missing values\n• Converting text/categories to numbers\n• Scaling features to similar ranges\n\n3. Model Training\n• Splitting data into training and testing sets\n• Teaching the model using training data\n• Evaluating performance on test data"
       },
       {
         type: "image" as const,
         content: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
-        caption: "Machine Learning processes vast amounts of data to find patterns and make predictions"
+        caption: "Machine Learning models learn patterns from data through an iterative training process"
       }
     ],
     quiz: [
       {
-        question: "What is Machine Learning?",
+        question: "What are features in Machine Learning?",
         options: [
-          "A type of computer programming",
-          "Learning from experience without explicit programming",
-          "A type of computer hardware"
+          "The final predictions of the model",
+          "Properties or characteristics we want the model to learn from",
+          "The software used to train models"
         ],
         correctAnswer: 1
       },
       {
-        question: "Which type of ML learns from labeled examples?",
+        question: "Why do we split data into training and testing sets?",
         options: [
-          "Unsupervised Learning",
-          "Reinforcement Learning",
-          "Supervised Learning"
+          "To save storage space",
+          "To make the model learn faster",
+          "To evaluate how well the model performs on new data"
         ],
         correctAnswer: 2
       },
       {
-        question: "What is an example of Reinforcement Learning?",
+        question: "What is data preprocessing?",
         options: [
-          "Spam detection",
-          "Customer grouping",
-          "Game playing AI"
+          "Collecting new data",
+          "Making predictions",
+          "Cleaning and preparing data for training"
         ],
         correctAnswer: 2
       }
     ]
   },
   {
-    id: "ml-applications",
-    title: "Machine Learning Applications",
-    description: "Explore real-world applications of Machine Learning",
+    id: "ml-models",
+    title: "Understanding ML Models",
+    description: "Learn about different types of Machine Learning models and how they work",
     content: [
       {
         type: "text" as const,
-        content: "Machine Learning is everywhere in our daily lives! Let's see where it's used:\n\n🏥 Healthcare:\n• Disease diagnosis from medical images\n• Predicting patient outcomes\n• Drug discovery\n\n🛍️ Shopping:\n• Product recommendations\n• Inventory management\n• Price optimization"
+        content: "Machine Learning models are like different tools for different jobs. Let's explore the main types:\n\n🎓 Supervised Learning Models:\n• Linear Regression: Predicts numbers (like house prices)\n• Decision Trees: Makes yes/no decisions (like loan approval)\n• Neural Networks: Complex pattern recognition (like image classification)\n\n🔍 Unsupervised Learning Models:\n• Clustering: Groups similar items together\n• Dimensionality Reduction: Simplifies complex data"
       },
       {
         type: "text" as const,
-        content: "🎮 Entertainment:\n• Game AI opponents\n• Music and movie recommendations\n• Content moderation\n\n🚗 Transportation:\n• Traffic prediction\n• Route optimization\n• Self-driving vehicles"
+        content: "How Models Make Decisions:\n\n1️⃣ Input Layer\n• Raw data enters the model\n• Features are processed\n\n2️⃣ Processing\n• Model applies learned patterns\n• Performs calculations\n\n3️⃣ Output Layer\n• Produces predictions or classifications\n• Confidence scores for decisions"
       },
       {
         type: "image" as const,
         content: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
-        caption: "Machine Learning powers many everyday technologies, from healthcare to entertainment"
+        caption: "Neural networks and other ML models process data through multiple layers to make predictions"
       }
     ],
     quiz: [
       {
-        question: "Which sector uses ML for disease diagnosis?",
+        question: "Which model type would you use to predict house prices?",
         options: [
-          "Entertainment",
-          "Healthcare",
-          "Transportation"
+          "Clustering",
+          "Linear Regression",
+          "Dimensionality Reduction"
         ],
         correctAnswer: 1
       },
       {
-        question: "How does ML help in shopping?",
+        question: "What is the purpose of the input layer in a model?",
         options: [
-          "By designing store layouts",
-          "By making product recommendations",
-          "By managing store employees"
+          "To make predictions",
+          "To receive and process raw data",
+          "To group similar items"
         ],
         correctAnswer: 1
       },
       {
-        question: "What is a transportation application of ML?",
+        question: "What type of model groups similar items together?",
         options: [
-          "Traffic prediction",
-          "Car manufacturing",
-          "Road construction"
+          "Linear Regression",
+          "Neural Networks",
+          "Clustering"
         ],
-        correctAnswer: 0
+        correctAnswer: 2
       }
     ]
   }
