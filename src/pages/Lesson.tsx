@@ -167,6 +167,104 @@ const lessonsData = [
         correctAnswer: 1
       }
     ]
+  },
+  {
+    id: "ml-basics",
+    title: "Machine Learning Basics",
+    description: "Understanding the fundamentals of Machine Learning",
+    content: [
+      {
+        type: "text" as const,
+        content: "Machine Learning is a type of AI that helps computers learn from experience without being explicitly programmed!\n\nThink of it like teaching a child:\n• First, you show them examples (Training Data)\n• They learn patterns from these examples (Learning)\n• Finally, they can recognize similar things on their own (Prediction)"
+      },
+      {
+        type: "text" as const,
+        content: "There are three main types of Machine Learning:\n\n1️⃣ Supervised Learning:\n• Like learning with a teacher\n• Computer learns from labeled examples\n• Example: Spam email detection\n\n2️⃣ Unsupervised Learning:\n• Learning without labels\n• Finding patterns in data\n• Example: Customer grouping\n\n3️⃣ Reinforcement Learning:\n• Learning through trial and error\n• Getting rewards for correct actions\n• Example: Game playing AI"
+      },
+      {
+        type: "image" as const,
+        content: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+        caption: "Machine Learning processes vast amounts of data to find patterns and make predictions"
+      }
+    ],
+    quiz: [
+      {
+        question: "What is Machine Learning?",
+        options: [
+          "A type of computer programming",
+          "Learning from experience without explicit programming",
+          "A type of computer hardware"
+        ],
+        correctAnswer: 1
+      },
+      {
+        question: "Which type of ML learns from labeled examples?",
+        options: [
+          "Unsupervised Learning",
+          "Reinforcement Learning",
+          "Supervised Learning"
+        ],
+        correctAnswer: 2
+      },
+      {
+        question: "What is an example of Reinforcement Learning?",
+        options: [
+          "Spam detection",
+          "Customer grouping",
+          "Game playing AI"
+        ],
+        correctAnswer: 2
+      }
+    ]
+  },
+  {
+    id: "ml-applications",
+    title: "Machine Learning Applications",
+    description: "Explore real-world applications of Machine Learning",
+    content: [
+      {
+        type: "text" as const,
+        content: "Machine Learning is everywhere in our daily lives! Let's see where it's used:\n\n🏥 Healthcare:\n• Disease diagnosis from medical images\n• Predicting patient outcomes\n• Drug discovery\n\n🛍️ Shopping:\n• Product recommendations\n• Inventory management\n• Price optimization"
+      },
+      {
+        type: "text" as const,
+        content: "🎮 Entertainment:\n• Game AI opponents\n• Music and movie recommendations\n• Content moderation\n\n🚗 Transportation:\n• Traffic prediction\n• Route optimization\n• Self-driving vehicles"
+      },
+      {
+        type: "image" as const,
+        content: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
+        caption: "Machine Learning powers many everyday technologies, from healthcare to entertainment"
+      }
+    ],
+    quiz: [
+      {
+        question: "Which sector uses ML for disease diagnosis?",
+        options: [
+          "Entertainment",
+          "Healthcare",
+          "Transportation"
+        ],
+        correctAnswer: 1
+      },
+      {
+        question: "How does ML help in shopping?",
+        options: [
+          "By designing store layouts",
+          "By making product recommendations",
+          "By managing store employees"
+        ],
+        correctAnswer: 1
+      },
+      {
+        question: "What is a transportation application of ML?",
+        options: [
+          "Traffic prediction",
+          "Car manufacturing",
+          "Road construction"
+        ],
+        correctAnswer: 0
+      }
+    ]
   }
 ];
 
