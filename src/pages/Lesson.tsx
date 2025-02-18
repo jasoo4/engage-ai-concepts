@@ -118,6 +118,55 @@ const lessonsData = [
         correctAnswer: 2
       }
     ]
+  },
+  {
+    id: "ai-vs-humans",
+    title: "AI vs. Humans",
+    description: "Understanding the differences between AI and human intelligence",
+    content: [
+      {
+        type: "text" as const,
+        content: "AI is powerful, but it's not smarter than humans—it just processes information much faster!\n\nLet's compare what each does best:\n\n👤 Humans are great at:\n• Understanding emotions and feelings\n• Being creative and original\n• Using common sense\n• Adapting to new situations\n\n🤖 AI excels at:\n• Fast calculations\n• Pattern recognition\n• Processing huge amounts of data\n• Repetitive tasks and automation"
+      },
+      {
+        type: "text" as const,
+        content: "Real-World Examples:\n\n♟️ AI Wins at Chess:\nAI can beat world chess champions because it can calculate millions of possible moves super fast. But it doesn't 'understand' the game like humans do—it just follows patterns and calculations.\n\n🎨 AI Can't Replace Artists:\nWhile AI can create impressive artwork by combining existing styles and patterns, it doesn't truly understand creativity, emotion, or meaning like human artists do."
+      },
+      {
+        type: "image" as const,
+        content: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+        caption: "AI excels at processing data and patterns, while humans excel at creativity and emotional understanding"
+      }
+    ],
+    quiz: [
+      {
+        question: "What is something AI cannot do well?",
+        options: [
+          "Solve math problems",
+          "Understand emotions",
+          "Recommend YouTube videos"
+        ],
+        correctAnswer: 1
+      },
+      {
+        question: "Why can AI beat humans at chess?",
+        options: [
+          "Because it understands the game better",
+          "Because it's more creative",
+          "Because it can calculate moves faster"
+        ],
+        correctAnswer: 2
+      },
+      {
+        question: "Which is a unique human strength compared to AI?",
+        options: [
+          "Processing large amounts of data",
+          "Making creative and original art",
+          "Performing repetitive tasks"
+        ],
+        correctAnswer: 1
+      }
+    ]
   }
 ];
 
