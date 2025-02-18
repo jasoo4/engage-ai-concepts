@@ -85,8 +85,8 @@ const lessonsData = [
       },
       {
         type: "image" as const,
-        content: "/placeholder.svg",
-        caption: "AI Learning Process Visualization"
+        content: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+        caption: "Circuit board representing the intricate neural networks in AI systems"
       }
     ],
     quiz: [
