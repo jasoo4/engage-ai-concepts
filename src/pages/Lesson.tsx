@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -25,8 +24,13 @@ const lessonsData = [
       },
       {
         type: "image" as const,
-        content: "/placeholder.svg",
-        caption: "AI powers many everyday technologies we use"
+        content: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+        caption: "Companies using AI in their products - From streaming services to translation tools"
+      },
+      {
+        type: "image" as const,
+        content: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+        caption: "Social media platforms like TikTok use AI for content recommendations"
       }
     ],
     quiz: [
